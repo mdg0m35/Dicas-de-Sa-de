@@ -1,0 +1,299 @@
+<div class="row">
+  <div class="col-md-12 col-xs-12 col-12 img-fluid">
+    <div class="logo">
+      <img src="assets\img\saude.png" alt="" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-11 col-xs-11 col-11 img-fluid"></div>
+  <div class="col-md-1 col-xs-1 col-1 img-fluid">
+
+
+    <div class="miniRadio">
+      <img  (click)=" miniRadio()" src="assets\img\music.png" alt="">
+
+    </div>
+    <div class="imc" id="imcCalc"  >
+      <img class="calcImc" (click)="botaoImc()" src="assets\img\IMC.png" alt="">
+    </div>
+      </div>
+
+    </div>
+</div>
+
+<div class="text">
+  <h1 class="logoTxt">Dicas de Saúde</h1>
+  <div class="iconLogo">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-12 img-fluid">
+        <div class="coracao">
+          <img src="assets/img/coracaoIcon.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="ondaAzulCont">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel img slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets\img\atividade-fisica.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h6 class="carousel-text" style="color: black">
+              Os benefícios que as atividades físicas trazem aos praticantes
+              estão muito além da boa forma.
+            </h6>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets\img\revista-hcor-saude-materia1.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <h6 class="carousel-text" style="text-align: center">
+              Avanços na saúde e bem-estar.
+            </h6>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img
+                src="assets\img\alimentcaoEquilabrada.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <h6 class="carousel-text" style="text-align: center">
+              Reeducação alimentar: veja os benefícios e saiba como começar
+            </h6>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+
+        </button>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <div class="container tabCal">
+      <div id="imcCal" style="display: none">
+        <div class="row">
+          <div class="col-5">
+            Peso:
+            <input
+              type="text"
+              [(ngModel)]="peso"
+              class="form-control"
+              step="0,010"
+              suffix=" Kg"
+              mask="0000"
+            />
+          </div>
+          <div class="col-5">
+            Altura:
+            <input
+              type="text"
+              id="altura"
+              [(ngModel)]="altura"
+              class="form-control"
+              step="0,010"
+              mask="0.00"
+             thousandSeparator="."
+            />
+          </div>
+
+          <div class="col-2">
+            <br />
+            <button
+              type="button"
+              nome="button"
+              (click)="calculadoraImc()"
+              class="btn btn-info"
+            >
+              Calcular
+            </button>
+          </div>
+        </div>
+        <br />
+        <h3 class="text-center">IMC: <br />{{ imc }}<br /></h3>
+        <h2 class="text-center situacao"></h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <mat-tab-group>
+        <mat-tab label="Musculação" >
+
+          <ul>
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 col-12">
+                    <div class="fotoGran">
+                      <div class="data">
+                        <span>Data: 17:06/2022 20h25min</span>
+                      </div>
+                      <img
+                        class="img"
+                        src="assets\img\Atividade Fisica.jpg"
+                        alt=""
+                      />
+
+                      <p class="textoLi">
+                        Os benefícios que as atividades físicas traze m aos
+                        praticantes estão muito além da boa forma. Podemos dizer
+                        que este resultado é secundário, se o compararmos aos
+                        ganhos significativos na saúde das pessoas.
+
+                        <a
+                          href="https://rosaliapadovani.com.br/noticias/atividade-fisica-seu-melhor-plano-de-saude/"
+                          ><div class="ref">
+                            fonte :
+                            https://rosaliapadovani.com.br/noticias/atividade-fisica-seu-melhor-plano-de-saude/
+                          </div></a
+                        >
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </li>
+          </ul>
+        </mat-tab>
+        <mat-tab  label="Bem Estar">
+          <ul>
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 col-12">
+                    <div class="fotoGran">
+                      <div class="data">
+                        <span>Data: 17:06/2022 20h25min</span>
+                      </div>
+                      <img
+                        class="img"
+                        src="assets\img\Atividade Fisica.jpg"
+                        alt=""
+                      />
+
+                      <p class="textoLi">
+                        Os benefícios que as atividades físicas traze m aos
+                        praticantes estão muito além da boa forma. Podemos dizer
+                        que este resultado é secundário, se o compararmos aos
+                        ganhos significativos na saúde das pessoas.
+
+                        <a
+                          href="https://rosaliapadovani.com.br/noticias/atividade-fisica-seu-melhor-plano-de-saude/"
+                          ><div class="ref">
+                            fonte :
+                            https://rosaliapadovani.com.br/noticias/atividade-fisica-seu-melhor-plano-de-saude/
+                          </div></a
+                        >
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </li>
+          </ul>
+        </mat-tab>
+        <mat-tab label="Esportes">
+          <ul>
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 col-12">
+                    <div class="fotoGran">
+                      <div class="data">
+                        <span>Data: 17:06/2022 20h25min</span>
+                      </div>
+                      <img
+                        class="img"
+                        src="assets\img\Atividade Fisica.jpg"
+                        alt=""
+                      />
+
+                      <p class="textoLi">
+                        Os benefícios que as atividades físicas traze m aos
+                        praticantes estão muito além da boa forma. Podemos dizer
+                        que este resultado é secundário, se o compararmos aos
+                        ganhos significativos na saúde das pessoas.
+
+                        <a
+                          href="https://rosaliapadovani.com.br/noticias/atividade-fisica-seu-melhor-plano-de-saude/"
+                          ><div class="ref">
+                            fonte :
+                            https://rosaliapadovani.com.br/noticias/atividade-fisica-seu-melhor-plano-de-saude/
+                          </div></a
+                        >
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </li>
+          </ul>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
+
+
+
+
+

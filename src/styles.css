@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+body,html{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  z-index: -2;
+}
+
+body{
+
+  background-image: url(assets/img/fundo/5.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 12, 155, 0.127);
+}

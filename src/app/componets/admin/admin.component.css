@@ -1,0 +1,70 @@
+.container{
+
+  position:static;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 2%;
+
+  }
+
+  .container .fundo{
+    max-width: 450px;
+    width: 100%;
+    position:static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    animation: animate 20s linear infinite;
+  }
+
+  form{
+    max-width: 400px;
+    height: 310px;
+  }
+  .btn{
+    color: rgb(255, 255, 255);
+  }
+  .btn:hover{
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+  }
+
+  .table{
+    background-color: rgba(255, 255, 255, 0.799);
+  }
+
+  span{
+    color:rgb(60, 60, 60);
+    font-size: 1.2rem;
+  }
+
+  label{
+    color: rgb(35, 35, 35);
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  button{
+    margin: 5px 5px;
+}
+
+
+@keyframes animate {
+  0% {
+    background-color: rgba(22, 190, 209, 0.567);
+
+  }
+
+  50%{
+    background-color: rgba(252, 252, 252, 0.567);
+  }
+
+  100% {
+    background-color: rgba(22, 190, 209, 0.567);
+  }
+}

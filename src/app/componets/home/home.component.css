@@ -1,0 +1,184 @@
+.logo img {
+  width: 100%;
+  height: 20vh;
+  min-width: 37rem;
+  min-height: 15rem;
+}
+
+.text {
+  position: absolute;
+  width: 90%;
+  height: 100px;
+  left: 05%;
+  top: 20%;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 20px;
+  border: 2px solid rgb(148, 148, 148);
+  z-index: 10;
+}
+.logoTxt {
+  position: relative;
+  text-align: center;
+  top: 29%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 5vh;
+  line-height: 48px;
+  color: #000000;
+}
+
+.coracao img {
+  width: 80px;
+  height: 80px;
+  margin-top: -50px;
+  margin-left: 85%;
+}
+.carousel-item {
+  top: 1rem;
+}
+.carousel-item img {
+  max-height: 30rem;
+  min-width: 32rem;
+  min-height: 20rem;
+  border-radius: 50px !important;
+  border: 15px solid rgba(40, 166, 216, 0.27);
+}
+
+.carousel-text {
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  text-justify: auto;
+  font-size: clamp(20em, 15em + 10vw);
+  color: rgba(198, 7, 7, 0.84);
+  background-color: rgba(255, 255, 255, 0.74);
+  border-radius: 20px;
+  border: 2px solid rgb(138, 138, 138);
+  font-style: italic;
+  top: -5rem;
+}
+
+.imc img{
+  position:relative;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  max-width: 7rem;
+  max-height: 7rem;
+  min-height: 3rem;
+  min-width: 3rem;
+  margin-top: 20px;
+  float: right;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.miniRadio img{
+  position:relative;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  max-width: 7rem;
+  max-height: 7rem;
+  min-height: 4rem;
+  min-width: 4rem;
+  margin-top: 5rem;
+  float: right;
+  cursor: pointer;
+}
+
+.tabCal{
+  background: linear-gradient(#6c1bcf9f, #0a08a36b, #b7bbc36d);
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.situacao {
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.btn-info {
+  width: 78px;
+  height: 35px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(#ffffff9f, #8884846b, #bebebe6d);
+  margin-left: -10px;
+}
+
+.btn-info:hover {
+  background-color: rgb(51, 6, 111);
+}
+
+.imcCal {
+  display: none;
+}
+
+.mat-tab-group {
+  margin-bottom: 48px;
+  background: linear-gradient(rgba(40, 166, 216, 0.27), #e2dbde8f, #484848a4);
+  border-radius: 20px;
+}
+
+.mat-tab-group {
+  color: #050216;
+}
+
+.mat-tab-group label{
+  font-size: 5rem !important;
+}
+
+h4 {
+  float: right;
+  margin-top: -21%;
+}
+.data span {
+  margin-left: 6rem;
+  color: rgb(81, 77, 77);
+}
+.fotoGran img {
+  display: flex;
+  margin-left: 5%;
+  width: 90%;
+  height: 50rem;
+  border-radius: 50px !important;
+  border: 15px solid rgba(40, 166, 216, 0.27);
+}
+.textoLi {
+  font-size: 1.2em;
+  text-justify: auto;
+  font-size: clamp(20em, 15em + 10vw);
+  color: rgb(255, 255, 255);
+  background: #6766696d;
+  border-radius: 20px;
+  font-style: italic;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 30px;
+}
+
+.ref {
+  cursor: pointer;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-size: clamp(10em, 9em + 2vw);
+  font-size: 1rem;
+}
+
+
+
+@media only screen and (max-width: 772px) {
+  span {
+    font-size: 9px;
+  }
+
+  .fotoGran img {
+    width: 28rem;
+    height: 30rem;
+    margin-left: -5%;
+  }
+  .ref {
+    font-size: 9px;
+  }
+}

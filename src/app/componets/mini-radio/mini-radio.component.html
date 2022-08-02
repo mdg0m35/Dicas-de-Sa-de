@@ -1,0 +1,44 @@
+
+<div class="container">
+<div class="discPayer">
+  <div class="col-md-6 col-xs-6 col-6">
+<div class="iconDisc">
+  <img id="disco" src="assets/img/Vinilo.png" alt="">
+</div>
+
+</div>
+<div class="fundoPlayer card">
+<div class="col-md-6 col-xs-6 col-6">
+
+<div class="duracao">
+     <div class="barra">
+        <progress type="range" min="0" max="{{duration}}" [value]="seek"></progress>
+        <div class="ponto"></div>
+     </div><!--barra-->
+     <div class="tempo">
+        <p class="inicio">{{currentTime}}</p>
+        <p class="fim">{{duration}}</p>
+     </div><!--tempo-->
+</div><!--duração-->
+
+<div class="player">
+    <i class="fas fa-backward setas anterior" (click)="anterior()"></i>
+    <i class="fas fa-play-circle botao-play"  (click)="tocarMusica(musicaObj.src)" ></i>
+    <i class="fas fa-pause-circle botao-pause" (click)="pause()"></i>
+    <i class="fas fa-forward setas proximo" (click)="proximo()"  ></i>
+</div><!--player-->
+</div><!--fundoPlayer-->
+
+<audio src="assets/music/Go! - NEFFEX.mp3"></audio>
+</div>
+</div>
+
+<div class="listPayer">
+  <ol>
+    <div *ngFor="let musica of musicas" (click)="tocarMusica(musica.src)">
+    <div class="border"><li>{{musica.titulo}}</li></div><br>
+  </div>
+  </ol>
+
+</div>
+</div><!--container-->
